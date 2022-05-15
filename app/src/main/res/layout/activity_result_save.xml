@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    android:background="@drawable/img_2"
+    tools:context=".ui.ResultSaveActivity">
+
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:textColor="#FFEF00"
+        android:background="@drawable/edit_back"
+        android:paddingStart="10dp"
+        android:maxLength="26"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toTopOf="@id/cancel_btn"
+        app:layout_constraintEnd_toEndOf="@id/save_button"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/cancel_btn"/>
+
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:background="@drawable/cancel_back"
+        android:layout_width="0dp"
+        android:text="Cancel"
+        android:gravity="center"
+        android:textColor="#FFEF00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@id/save_button"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/save_button"
+        android:background="@drawable/save_back"
+        android:layout_width="0dp"
+        android:text="Save"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/cancel_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

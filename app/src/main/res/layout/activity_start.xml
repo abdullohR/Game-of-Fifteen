@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img_2"
+    android:id="@+id/content_start"
+    android:layout_height="match_parent"
+    tools:context=".ui.StartActivity">
+    <ImageView
+        android:id="@+id/info_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="top|right"
+        android:src="@drawable/img"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/cancel_back"
+            android:onClick="onClick"
+            android:text="Start"
+            android:textColor="#FFEF00"
+            android:textAllCaps="false"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_below="@id/btn_start"
+            android:text="Settings"
+            android:onClick="onClick"
+            android:background="@drawable/save_back"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:layout_width="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:id="@+id/btn_result"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/btn_settings"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/cancel_back"
+            android:onClick="onClick"
+            android:text="Results"
+            android:textAllCaps="false"
+            android:textColor="#FFEF00"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_below="@id/btn_result"
+            android:text="Exit"
+            android:onClick="onClick"
+            android:textAllCaps="false"
+            android:background="@drawable/save_back"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="160dp"
+            android:layout_height="60dp"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
